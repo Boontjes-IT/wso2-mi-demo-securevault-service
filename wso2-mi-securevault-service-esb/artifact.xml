@@ -1,0 +1,5 @@
+<artifacts>
+  <artifact name="DemoSecureVaultProxy" groupId="nl.boontjesit.adapters.wso2-mi-securevault-service.proxy-services" serverRole="EnterpriseIntegrator" type="synapse/proxy-service" version="1.0.0-SNAPSHOT">
+    <file>src/main/synapse-config/proxy-services/DemoSecureVaultProxy.xml</file>
+  </artifact>
+</artifacts>

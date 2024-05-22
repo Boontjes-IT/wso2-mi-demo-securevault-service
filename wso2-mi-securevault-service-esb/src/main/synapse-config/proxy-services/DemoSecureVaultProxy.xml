@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="DemoSecureVaultProxy"
+	xmlns="http://ws.apache.org/ns/synapse" transports="http https" startOnLoad="true" trace="disable">
+	<target>
+		<inSequence>
+			<log level="full">
+				<property name="#### START" value="Enter PassThroughProxy Service"/>
+			</log>
+			<log level="full">
+				<property name="#### secret_key vault-lookup result:" expression="wso2:vault-lookup('secret_key')"/>
+			</log>
+			<respond/>
+		</inSequence>
+		<outSequence/>
+		<faultSequence/>
+	</target>
+</proxy>
