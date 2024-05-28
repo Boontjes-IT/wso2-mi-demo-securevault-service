@@ -9,6 +9,9 @@
 			<log level="full">
 				<property name="#### secret_key vault-lookup result:" expression="wso2:vault-lookup('secret_key')"/>
 			</log>
+			<log level="full">
+				<property name="#### secret.user.name vault-lookup result:" expression="wso2:vault-lookup('secret.user.name')"/>
+			</log>
 			<respond/>
 		</inSequence>
 		<outSequence/>
